@@ -5,6 +5,9 @@ Available here: [Tindie](https://www.tindie.com/products/bleeptrack/picoplanet/)
 More information about the design process: link coming soon  
 
 ### Features:
+
+- Dimensions: 27.0 x 89.2 mm
+
 - SAMD21
 - USB-C
 - 3 capacitive touch buttons (planets)
