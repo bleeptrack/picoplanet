@@ -1,51 +1,53 @@
+//Important! Adafruit Freetouch Library is needed for the capacitive
+//touch buttons to work. Install via Library Manager!
+//https://www.arduino.cc/reference/en/libraries/adafruit-freetouch-library/
+
+// This Example uses the HID-Project Library for
+// Media control. Uncomment marked lines if you have
+// https://github.com/NicoHood/HID installed
+
 #include "Adafruit_FreeTouch.h"
-#include "HID-Project.h"
-#include <Wire.h> //I2C-Bibliothek
+//#include "HID-Project.h" //uncomment if HID library installed. See top comment
 
-//blaue led 4
-// rote led 3
-
+//capacitive button init
 Adafruit_FreeTouch qt_1 = Adafruit_FreeTouch(A0, OVERSAMPLE_4, RESISTOR_20K, FREQ_MODE_NONE);
 Adafruit_FreeTouch qt_2 = Adafruit_FreeTouch(A1, OVERSAMPLE_4, RESISTOR_20K, FREQ_MODE_NONE);
 Adafruit_FreeTouch qt_3 = Adafruit_FreeTouch(A2, OVERSAMPLE_4, RESISTOR_20K, FREQ_MODE_NONE);
 
-// the setup function runs once when you press reset or power the board
+
 void setup() {
-  // initialize digital pin LED_BUILTIN as an output.
+
   Serial.begin(9600);
-  Wire.begin();
-  
+
+  //Set LED lines as output so we can use them
   pinMode(LED_R, OUTPUT);
   pinMode(LED_G, OUTPUT);
   pinMode(LED_B, OUTPUT);
 
-  if (! qt_1.begin())  
+  //check if capacitive buttons are working
+  if (! qt_1.begin())
     Serial.println("Failed to begin qt on pin A0");
-  if (! qt_2.begin())  
+  if (! qt_2.begin())
     Serial.println("Failed to begin qt on pin A0");
-  if (! qt_3.begin())  
+  if (! qt_3.begin())
     Serial.println("Failed to begin qt on pin A0");
 
-  Keyboard.begin();
+  //Keyboard.begin(); //uncomment if HID library installed. See top comment
 }
 
-// the loop function runs over and over again forever
 void loop() {
-  /*digitalWrite(3, HIGH);   // turn the LED on (HIGH is the voltage level)
-  delay(1000);                       // wait for a second
-  digitalWrite(3, LOW);    // turn the LED off by making the voltage LOW
-  delay(1000);                     // wait for a second
-  */
+
+  //meassure values at capacitive touch buttons
+  int result1 = qt_1.measure();
+  int result2 = qt_2.measure();
+  int result3 = qt_3.measure();
 
 
-  int result1 = qt_1.measure(); 
-  int result2 = qt_2.measure(); 
-  int result3 = qt_3.measure(); 
-
- 
+  //check if button is pressed aka value is high enough
+  //important: LEDs are active when LOW!
   if(result1 > 500){
     digitalWrite(LED_R, LOW);
-    Keyboard.write(KEY_VOLUME_MUTE);
+    //Keyboard.write(KEY_VOLUME_MUTE); //uncomment if HID library installed. See top comment
     delay(200);
   }else{
     digitalWrite(LED_R, HIGH);
@@ -53,7 +55,7 @@ void loop() {
 
   if(result2 > 500){
     digitalWrite(LED_G, LOW);
-    Keyboard.write(KEY_VOLUME_UP);
+    //Keyboard.write(KEY_VOLUME_UP);   //uncomment if HID library installed. See top comment
     delay(200);
   }else{
     digitalWrite(LED_G, HIGH);
@@ -61,14 +63,10 @@ void loop() {
 
   if(result3 > 500){
     digitalWrite(LED_B, LOW);
-    Keyboard.write(KEY_VOLUME_DOWN);
+    //Keyboard.write(KEY_VOLUME_DOWN);   //uncomment if HID library installed. See top comment
     delay(200);
   }else{
     digitalWrite(LED_B, HIGH);
   }
 
-
-  
-
-  //delay(200);
 }
