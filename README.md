@@ -26,7 +26,7 @@ Important: because the PCBs are procedurally generated, the threshold values for
 
 #### Circuit Python (recommended)
 
-- Download Circuit Python from (link coming soon)
+- Download Circuit Python from [circuitpython.org](https://circuitpython.org/board/picoplanet/)
 
 - Connect your PicoPlanet to your PC. A drive called PLANETBOOT should appear.
 
