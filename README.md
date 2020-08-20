@@ -1,8 +1,8 @@
 # PicoPlanet
 ![Product Image](https://github.com/bleeptrack/picoplanet/blob/master/imgs/product-img.jpg)
 PicoPlanet is a series of procedurally designed PCBs.  
-Available here: [Tindie](https://www.tindie.com/products/bleeptrack/picoplanet/)
-More information about the design process: link coming soon  
+Available here: [Tindie](https://www.tindie.com/products/bleeptrack/picoplanet/)  
+More information about the design process: link coming soon    
 
 ### Features:
 
