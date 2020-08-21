@@ -36,7 +36,7 @@ Important: because the PCBs are procedurally generated, the threshold values for
 - Open your Board Manager. Search for "bleeptrack boards" and install them.
 - Choose bleeptrack boards > PicoPlanet in your Board selection
 - Compile and upload :)
-- If Arduino does not detect your PicoPlanet board, bring your board into bootloader mode by connecting a wire to the GND pin on the backside and double tap the RESET pad with the other end of the wire. The PLANETBOOT drive should appear now and the Arduino IDE will recognize the board again 
+- If Arduino does not detect your PicoPlanet board, bring your board into bootloader mode by connecting a wire to the GND pin on the backside and double tap the RESET pad with the other end of the wire. The PLANETBOOT drive should appear now and the Arduino IDE will recognize the board again. See [example video](https://youtu.be/1Hi12uxtpS8). 
 - The LED RGB Pins can directly be accessed by `LED_R`, `LED_G`, `LED_B`
 
 #### Troubleshooting
