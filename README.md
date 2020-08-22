@@ -44,8 +44,9 @@ Important: because the PCBs are procedurally generated, the threshold values for
 
 ## Generator
 
-You can play with the generator yourself. Open `index.html` and reload the page to generate a new image. You have two options to save: `Perfect Purple` gives a SVG that is compatible with svg2shenzen and is made for typical PCBs (like the Oshpark's Perfect Purple). You can also choose `After Dark` which is specifically made for Oshpark's After Dark with a black base plate and a clear solder mask.
+You can play with the generator yourself. First, install npm modules `paper` and `paperjs-offset`. Open `index.html` and reload the page to generate a new image. You have two options to save: `Perfect Purple` gives a SVG that is compatible with svg2shenzen and is made for typical PCBs (like the Oshpark's Perfect Purple). You can also choose `After Dark` which is specifically made for Oshpark's After Dark with a black base plate and a clear solder mask.
 
 The generated images are currently not suitable to use them directly for pen plotters (and in the vector format also not for laser cutters). You might need to adjust them to your needs.
 
 You are free to use the code and the generated images in any non-commercial way. 
+
