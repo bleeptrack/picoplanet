@@ -49,3 +49,4 @@ You can play with the generator yourself. Run `npm install` in the `generator` f
 The generated images are currently not suitable to use them directly for pen plotters (and in the vector format also not for laser cutters). You might need to adjust them to your needs.
 
 You are free to use the code and the generated images in any non-commercial way. 
+
