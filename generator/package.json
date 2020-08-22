@@ -1,0 +1,23 @@
+{
+  "name": "picoplanet-generator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bleeptrack/picoplanet.git"
+  },
+  "author": "bleeptrack",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bleeptrack/picoplanet/issues"
+  },
+  "homepage": "https://github.com/bleeptrack/picoplanet#readme",
+  "dependencies": {
+    "paper": "^0.12.11",
+    "paperjs-offset": "^1.0.8"
+  }
+}
