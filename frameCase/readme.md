@@ -1,4 +1,4 @@
-Little 3D-printed case/frame for PicoPlanet by ALex (@tinyledmatrix)
+Little 3D-printed case/frame for PicoPlanet by Alex (@tinyledmatrix)
 
 Included Files:
 STL
