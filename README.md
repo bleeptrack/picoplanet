@@ -52,5 +52,5 @@ You are free to use the code and the generated images in any non-commercial way.
 
 ## Accessories
 - A case by [tinyledmatrix](https://twitter.com/tinyledmatrix) can be found in this repo in the ``frameCase`` folder
-- Another case by [pantoffel](https://twitter.com/Akkefrietje) is on Thingiverse: [Bumpercase](https://www.thingiverse.com/thing:4583005)
+- Another case by Kartoffel is on Thingiverse: [Bumpercase](https://www.thingiverse.com/thing:4583005)
 
