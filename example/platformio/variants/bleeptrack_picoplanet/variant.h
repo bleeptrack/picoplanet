@@ -77,28 +77,43 @@ extern "C"
 // #define digitalPinToTimer(P)
 
 // PINs
-#define D1 1
-#define D2 2
-#define D3 3
-#define D4 4
-#define D5 5
-#define D6 6
-#define D7 7
-#define PIN_NC 0
-#define SWCLK                (19u)
-#define SWDIO                (20u)
+#define PIN_D1                   (1u)
+#define PIN_D2                   (2u)
+#define PIN_D3                   (3u)
+#define PIN_D4                   (4u)
+#define PIN_D5                   (5u)
+#define PIN_D6                   (6u)
+#define PIN_D7                   (7u)
+#define PIN_NC                   (0u)
+#define PIN_SWCLK                (19u)
+#define PIN_SWDIO                (20u)
+
+static const uint8_t D1  = PIN_D1;
+static const uint8_t D2  = PIN_D2;
+static const uint8_t D3  = PIN_D3;
+static const uint8_t D4  = PIN_D4;
+static const uint8_t D5  = PIN_D5;
+static const uint8_t D6  = PIN_D6;
+static const uint8_t D7  = PIN_D7;
+static const uint8_t SWCLK  = PIN_SWCLK;
+static const uint8_t SWDIO  = PIN_SWDIO;
 
 // LEDs
-#define LED_G                D5
-#define LED_R                D6
-#define LED_B                D7
-#define PIN_LED_13           LED_B
-#define PIN_LED_RXL          PIN_NC // or LED_G if you want it to flash with Serial()
-#define PIN_LED_TXL          PIN_NC // or LED_R if you want it to flash with Serial()
-#define PIN_LED              LED_B
-#define PIN_LED2             LED_R
-#define PIN_LED3             LED_G
-#define LED_BUILTIN          LED_B
+#define PIN_LED_G            PIN_D5
+#define PIN_LED_R            PIN_D6
+#define PIN_LED_B            PIN_D7
+#define PIN_LED_13           PIN_LED_R
+#define PIN_LED_RXL          PIN_NC // or LED_x if you want it to flash with Serial()
+#define PIN_LED_TXL          PIN_NC // or LED_x if you want it to flash with Serial()
+#define PIN_LED              PIN_LED_R
+#define PIN_LED2             PIN_LED_G
+#define PIN_LED3             PIN_LED_B
+#define LED_BUILTIN          PIN_LED_R
+
+static const uint8_t LED_R  = PIN_LED_R;
+static const uint8_t LED_G  = PIN_LED_G;
+static const uint8_t LED_B  = PIN_LED_B;
+
 
 /*
  * Analog pins
@@ -135,7 +150,7 @@ static const uint8_t DAC0 = PIN_DAC0;
 /*
  * SPI Interfaces
  */
-#define SPI_INTERFACES_COUNT 1 // shared with I2C/UART (can't do both)
+#define SPI_INTERFACES_COUNT 1
 
 #define PIN_SPI_MISO         (19u)
 #define PIN_SPI_MOSI         (3u)
