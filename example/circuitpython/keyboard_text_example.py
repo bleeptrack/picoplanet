@@ -5,7 +5,6 @@
 import time
 import board
 import touchio
-import pulseio
 from digitalio import DigitalInOut, Direction, Pull
 
 import usb_hid
