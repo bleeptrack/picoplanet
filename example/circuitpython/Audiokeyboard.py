@@ -4,7 +4,6 @@
 import time
 import board
 import touchio
-import pulseio
 from digitalio import DigitalInOut, Direction, Pull
 #import usb_hid
 #from adafruit_hid.consumer_control import ConsumerControl
