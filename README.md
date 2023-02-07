@@ -30,6 +30,7 @@ Important: because the PCBs are procedurally generated, the threshold values for
 - Connect your PicoPlanet to your PC. A drive called PLANETBOOT should appear.
 - Place the firmware on the PLANETBOOT drive and wait for a moment. PLANETBOOT will dismount and a new drive called CIRCUITPY will appear. 
 - More information on Circuit Python can be found here: [CPY getting started](https://learn.adafruit.com/welcome-to-circuitpython)
+- In case you want to update your Circuit Python Version, you need to bring your board back to bootloader mode. This can be done by connecting a wire to the GND pin on the backside and double tap the RESET pad with the other end of the wire. The PLANETBOOT drive should appear now and you can place the updated firmware in the drive. See [example video](https://youtu.be/1Hi12uxtpS8). 
 
 #### Arduino
 - In your Arduino IDE, unter File > Preferences add `https://boards.bleeptrack.de/package_bleeptrack_index.json` to "Additional Boards Manager URLs"
